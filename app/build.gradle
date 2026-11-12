@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'com.almaham.app'
+ compileSdk 35
+ defaultConfig { applicationId 'com.almaham.app.fixed'; minSdk 26; targetSdk 35; versionCode 6; versionName '1.5' }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+ signingConfigs {
+  release {
+   storeFile file("${rootDir}/almaham-release.keystore")
+   storePassword 'almaham15'
+   keyAlias 'almaham'
+   keyPassword 'almaham15'
+  }
+ }
+ buildTypes {
+  debug { signingConfig signingConfigs.release }
+  release { signingConfig signingConfigs.release; minifyEnabled false }
+ }
+ lint { checkReleaseBuilds false }
+}

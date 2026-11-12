@@ -1,0 +1,5 @@
+<resources>
+ <string name="app_name">Al-Maham</string>
+ <string name="power_service_name">المهام — فتح قائمة الطاقة</string>
+ <string name="power_service_description">خدمة اختيارية لفتح قائمة الطاقة الرسمية عند الضغط على زر إيقاف التشغيل فقط. لا تقرأ محتوى الشاشة، ولا تجمع بيانات، ولا تسجل صوتاً.</string>
+</resources>
